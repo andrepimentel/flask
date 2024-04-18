@@ -1,0 +1,12 @@
+click==7.1.2
+Flask==1.1.2
+gunicorn==20.0.4
+itsdangerous==1.1.0
+Jinja2==2.11.3
+MarkupSafe==1.1.1
+Werkzeug==1.0.1
+google-ads==23.1.0
+google-auth==2.23.0
+google-cloud-secret-manager==2.19.0
+google_crc32c==1.5.0
+secret==0.8
