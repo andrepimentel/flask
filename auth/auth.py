@@ -38,5 +38,12 @@ def oauth2callback(passthrough_val, state, code, token):
     flow.redirect_uri = _REDIRECT_URI
     flow.fetch_token(code=code)
     refresh_token = flow.credentials.refresh_token
+    print(f"\nYour refresh token is: {refresh_token}\n")
+    print(
+        "Add your refresh token to your client library configuration as "
+        "described here: "
+        "https://developers.google.com/google-ads/api/docs/client-libs/python/configuration"
+    )
+       
     secret = Secret(token)
     secret.create_secret_version(refresh_token)
