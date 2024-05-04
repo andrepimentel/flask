@@ -43,7 +43,6 @@ def oauth2callback(passthrough_val, state, code, token):
         "Add your refresh token to your client library configuration as "
         "described here: "
         "https://developers.google.com/google-ads/api/docs/client-libs/python/configuration"
-    )
-       
+    )       
     secret = Secret(token)
     secret.create_secret_version(refresh_token)
